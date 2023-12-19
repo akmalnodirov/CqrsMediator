@@ -48,6 +48,32 @@ public class DriversController(IUnitOfWork unitOfWork, IMapper mapper) : BaseCon
         await _unitOfWork.DriverRepository.Update(result);
         await _unitOfWork.CompleteAsync();
         return NoContent();
+
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> GetAllDrivers()
+    {
+        var drivers = await _unitOfWork.DriverRepository.All();
+
+        var result = _mapper.Map<IEnumerable<GetDriverResponse>>(drivers);
+
+        return Ok(result);
+    }
+
+    [HttpDelete]
+    [Route("{driverId:guid}")]
+    public async Task<IActionResult> DeleteDriver(Guid driverId)
+    {
+        var driver = await _unitOfWork.DriverRepository.GetById(driverId);
+
+        if(driver == null)
+            return NotFound();
+
+        await _unitOfWork.DriverRepository.Delete(driverId);
+        await _unitOfWork.CompleteAsync();
+
+        return NoContent();
     }
 
 }

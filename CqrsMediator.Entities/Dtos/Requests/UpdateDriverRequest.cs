@@ -6,4 +6,9 @@ public class UpdateDriverRequest
     public string LastName { get; set; }
     public int DriverNumber { get; set; }
     public DateTime DateOfBirth { get; set; }
+
+    public void Something()
+    {
+        Console.WriteLine("write something");
+    }
 }
