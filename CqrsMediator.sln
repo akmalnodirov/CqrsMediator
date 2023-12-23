@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{FC50
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{7E1D2E42-E037-4CB6-9079-F1656D530E8D}"
 	ProjectSection(SolutionItems) = preProject
-		cqrs..yaml = cqrs..yaml
+		cqrs.yaml = cqrs.yaml
 	EndProjectSection
 EndProject
 Global
