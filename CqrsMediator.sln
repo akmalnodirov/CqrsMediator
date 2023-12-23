@@ -9,13 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CqrsMediator.DataService", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CqrsMediator.Api", "CqrsMediator.Api\CqrsMediator.Api.csproj", "{89A4B690-1AC4-4021-9157-F5A35903B831}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{68D16582-E894-46F1-9149-1FB4BCDFFD22}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{0AD74A91-65F6-4BAF-B134-F5BBEF71098B}"
-	ProjectSection(SolutionItems) = preProject
-		cqrs.yaml = cqrs.yaml
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,9 +30,6 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{0AD74A91-65F6-4BAF-B134-F5BBEF71098B} = {68D16582-E894-46F1-9149-1FB4BCDFFD22}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {98B89844-EBD2-4D73-B8B8-4F656767216E}
