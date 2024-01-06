@@ -21,7 +21,7 @@ jobs: #so it asks what should happen when we push and it is called jobs
               run: dotnet restore
 
             - name: Build app
-              run: dotnet build -c Release --no-retore
+              run: dotnet build -c Release --no-restore
 
 
             
